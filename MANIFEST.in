@@ -1,0 +1,4 @@
+include smartpark/crud.sqlite
+graft smartpark/static
+graft smartpark/templates
+global-exclude *.pyc

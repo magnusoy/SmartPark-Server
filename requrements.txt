@@ -1,0 +1,5 @@
+flask
+Flask-WTF
+Flask-SQLAlchemy
+jwt
+flask-marshmallow

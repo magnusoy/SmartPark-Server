@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+{{ super() }}
+<link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div class="bg"></div>
+{% endblock %}

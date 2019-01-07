@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}Overview{% endblock %}
+{% block head %}
+{{ super() }}
+<link href="{{ url_for('static', filename='css/map.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+<div id="map" style=float:left;"></div>
+
+<div id="parkinglotList" class="btn-group-vertical" role="group" style="width:300px; float:right;">
+  <p style="font-size:160%;">Parkinglots nearby</p>
+  <ul id="parkingList" class="list-group"></ul>
+</div>
+
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-a9c4VRCxYKYinFVM74v5_2bcWFzu4jQ&callback=initMap&language=no&region=NO"
+  async
+  defer
+></script>
+
+{% endblock %}
