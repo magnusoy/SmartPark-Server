@@ -62,6 +62,7 @@ Press CTRL+X to exit.
 To run development server :
 ```bash
 cd ~/SmartPark-Server
+export FLASK_APP=app.py
 flask run
 ```
 Press Ctrl+C in the terminal to close the server.
