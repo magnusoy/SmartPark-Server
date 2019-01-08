@@ -1,6 +1,13 @@
 # SmartPark-Server
 
-Short description...
+SmartPark-Server contains a website and has a REST-API.
+This solution is supposed to run on a Raspberry Pi, but will work with linux, windows computers aswell.
+It is possible to run the application alone as seen in the Examples, but you will have to download the client application for full functionality.
+With doing so you will be able to add your own parkinglot and mark the parkingspots accordingly.
+
+
+Go to [SmartPark-Client](https://github.com/magnusoy/SmartPark-Client) for more imformation setting it up.
+
 
 ### Prerequisites
 
@@ -16,17 +23,18 @@ sudo apt-get install python3-dev libffi-dev libssl-dev -y
 
 Install dependencies
 ```bash
-pip install -r /path/to/requirements.txt
+pip3 install -r /path/to/requirements.txt
 
 or
 
-pip install Flask==1.0.2
-pip install Flask-Mail==0.9.1
-pip install flask-marshmallow==0.9.0
-pip install Flask-WTF==0.14.2
-pip install Flask-SQLAlchemy==2.3.2
-pip install marshmallow==2.16.3
-pip install marshmallow-sqlalchemy==0.15.0
+pip3 install Flask==1.0.2
+pip3 install Flask-Mail==0.9.1
+pip3 install flask-marshmallow==0.9.0
+pip3 install Flask-WTF==0.14.2
+pip3 install Flask-SQLAlchemy==2.3.2
+pip3 install marshmallow==2.16.3
+pip3 install marshmallow-sqlalchemy==0.15.0
+pip3 install PyJWT
 ```
 
 ### Installing
