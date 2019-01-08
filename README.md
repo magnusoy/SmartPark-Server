@@ -21,9 +21,19 @@ sudo apt-get upgrade
 sudo apt-get install python3-dev libffi-dev libssl-dev -y
 ```
 
+### Installing
+
+Clone or download repository to your home directory.
+
+```bash
+cd ~
+git clone https://github.com/magnusoy/SmartPark-Server.git
+```
+
 Install dependencies
 ```bash
-pip3 install -r /path/to/requirements.txt
+cd ~/SmartPark-Server
+pip3 install -r requirements.txt
 
 or
 
@@ -35,15 +45,6 @@ pip3 install Flask-SQLAlchemy==2.3.2
 pip3 install marshmallow==2.16.3
 pip3 install marshmallow-sqlalchemy==0.15.0
 pip3 install PyJWT
-```
-
-### Installing
-
-Clone or download repository to your home directory.
-
-```bash
-cd ~
-git clone https://github.com/magnusoy/SmartPark-Server.git
 ```
 
 You will have to change some settings if you want a working contact page.
@@ -60,7 +61,7 @@ Press CTRL+X to exit.
 
 To run development server :
 ```bash
-cd ~/SmartPark-Client
+cd ~/SmartPark-Server
 flask run
 ```
 Press Ctrl+C in the terminal to close the server.
