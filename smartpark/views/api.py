@@ -7,6 +7,7 @@ from smartpark.models import Parkinglot
 from smartpark import ma
 from smartpark import db
 from functools import wraps
+import os.path
 import json
 import datetime
 import jwt
@@ -20,6 +21,8 @@ class ParkinglotSchema(ma.Schema):
 
 parkinglot_schema = ParkinglotSchema()
 parkinglots_schema = ParkinglotSchema(many=True)
+if not os.path.isfile("../instance/crud.sqlite"):
+    db.create_all()
 
 
 def token_required(f):
