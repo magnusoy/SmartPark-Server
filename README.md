@@ -111,7 +111,7 @@ Press Ctrl+C in the terminal to close the server.
 
 The development server will now run on: http://localhost:5000/
 
-
+![Output](https://github.com/magnusoy/SmartPark-Server/blob/master/docs/overview.JPG)
 
 
 ## Built With
